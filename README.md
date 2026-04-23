@@ -1,36 +1,35 @@
 # Tenga Proxy Mobile
 
-Android приложение для управления VPN-подключениями. Использует движок [sing-box](https://github.com/SagerNet/sing-box).
+An Android app for managing VPN connections. Backend [sing-box](https://github.com/SagerNet/sing-box).
 
-## Скачать
+## Download
 
-Скачайте latest версию APK в разделе [Releases](https://github.com/vebulogmetra/tenga-proxy-mobile/releases).
+Download the latest APK version from the [Releases](https://github.com/vebulogmetra/tenga-proxy-mobile/releases) section.
 
-## Поддерживаемые протоколы
+- **VLESS** — including Reality and XTLS support
+- **Trojan** — with and without TLS
+- **Shadowsocks**
+- **HTTP/HTTPS** — HTTP proxy
 
-- **VLESS** — включая поддержку Reality, XTLS
-- **Trojan** — с TLS и без
-- **HTTP/HTTPS** — HTTP прокси
+## Features
 
-## Функционал
+- **Profile Import**:
+- Share link parsing (`vless://`, `trojan://`, `ss://`, `http://`, `https://`)
+- QR code scanning for quick import
+- Paste from clipboard
+- Import from xray/v2ray JSON configuration
+- Subscription support with automatic updates
 
-- **Импорт профилей**:
-  - Парсинг share links (vless://, trojan://, http://, https://)
-  - Сканирование QR-кодов для быстрого импорта
-  - Вставка из буфера обмена
-  - Поддержка подписок с автоматическим обновлением
+- **Routing Settings**:
+- Customizable routing rules
+- Selective routing by application
 
-- **Настройки маршрутизации**:
-  - Режимы маршрутизации (настраиваемые пользовательские правила)
-  - Выборочная маршрутизация по приложениям (в разработке)
+- **DNS Settings**:
+- Separate DNS servers for proxy and direct traffic
+- Domain resolution strategy configuration (IPv4/IPv6)
+- DNS-level domain blocking
 
-- **Настройки DNS**:
-  - Отдельные DNS-серверы для прокси и прямого трафика
-  - Настройка стратегии разрешения доменов (IPv4/IPv6)
-  - Блокировка доменов на уровне DNS
+## Requirements
 
-## Требования
-
-- Android 7.0 (API 24) или выше
-- Поддержка архитектуры: arm64-v8a
-
+- Android 7.0 (API 24) or higher
+- Architecture: arm64-v8a
