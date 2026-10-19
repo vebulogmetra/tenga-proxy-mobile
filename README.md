@@ -1,4 +1,4 @@
-# Tenga Proxy Mobile (Wingeon)
+# Tenga Proxy Mobile (Veblock)
 
 An Android VPN client powered by [xray-core](https://github.com/XTLS/Xray-core) via [libXray](https://github.com/XTLS/libXray), plus censorship bypass through VK calls. Kotlin + Jetpack Compose.
 
@@ -13,14 +13,14 @@ Download the latest APK from the [Releases](https://github.com/vebulogmetra/teng
 - **Hysteria2** — QUIC, including finalmask obfuscation, port hopping, obfs salamander and brutal
 - **Shadowsocks** — AEAD and 2022 (blake3) ciphers; stream ciphers and SIP003 plugins are not supported
 - **HTTP/HTTPS** — HTTP proxy with authentication
-- **VK calls** — a tunnel to a node through the TURN relays of VK calls (`wingeon://connect?…` links issued by the panel)
+- **VK calls** — a tunnel to a node through the TURN relays of VK calls (`veblock://connect?…` links; `wingeon://connect?…` links issued by the panel are accepted too)
 
 VMess and SOCKS are not supported.
 
 ## Features
 
 - **Profile Import**:
-  - Share link parsing (`vless://`, `trojan://`, `hysteria2://`, `hy2://`, `ss://`, `http://`, `https://`, `wingeon://connect`)
+  - Share link parsing (`vless://`, `trojan://`, `hysteria2://`, `hy2://`, `ss://`, `http://`, `https://`, `veblock://connect`, `wingeon://connect`)
   - QR code scanning
   - Paste from clipboard
   - Import from xray/v2ray JSON configuration
