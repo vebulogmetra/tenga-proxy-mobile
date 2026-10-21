@@ -69,7 +69,7 @@ VMess and SOCKS are not supported.
 
 - **Traffic statistics** in real time, with a configurable display mode
 
-- **Diagnostics**: log viewer and sharing with sensitive data scrubbed, xray-core update check
+- **Diagnostics**: manual network checks for allowlists, Telegram, Instagram, YouTube and DNS; optional connection checks, VPN comparison and a redacted report. Log viewer and xray-core update check.
 
 - **Security**: encrypted local profile database (SQLCipher), one-time credentials for local xray inbounds, secrets masked in logs
 
