@@ -13,6 +13,7 @@ Download the latest APK from the [Releases](https://github.com/vebulogmetra/teng
 - **Hysteria2** — QUIC, including finalmask obfuscation, port hopping, obfs salamander and brutal
 - **Shadowsocks** — AEAD and 2022 (blake3) ciphers; stream ciphers and SIP003 plugins are not supported
 - **HTTP/HTTPS** — HTTP proxy with authentication
+- **WireGuard** — `wireguard://` / `wg://` links and plain `[Interface]`/`[Peer]` config text; AmneziaWG is not supported
 - **VK calls** — a tunnel to a node through the TURN relays of VK calls (`veblock://connect?…` links; `wingeon://connect?…` links issued by the panel are accepted too)
 
 VMess and SOCKS are not supported.
@@ -20,13 +21,14 @@ VMess and SOCKS are not supported.
 ## Features
 
 - **Profile Import**:
-  - Share link parsing (`vless://`, `trojan://`, `hysteria2://`, `hy2://`, `ss://`, `http://`, `https://`, `veblock://connect`, `wingeon://connect`)
+  - Share link parsing (`vless://`, `trojan://`, `hysteria2://`, `hy2://`, `ss://`, `http://`, `https://`, `wireguard://`, `wg://`, `veblock://connect`, `wingeon://connect`)
   - QR code scanning
   - Paste from clipboard
-  - Import from xray/v2ray JSON configuration
+  - Import from xray/v2ray JSON configuration (full config, array of configs or a single outbound); outbounds that a share link cannot carry in full are kept as JSON profiles you can view and copy
   - Links are validated before a profile is saved
 
 - **Subscriptions**:
+  - Automatic background updates (every 12 hours or the provider's interval, at most hourly); can be turned off globally or per subscription
   - Traffic quota and expiry from `subscription-userinfo`, provider name and metadata, renew link
   - Base64 link lists and xray JSON configs as a fallback format
   - Fetched through the tunnel while the VPN is on, falling back to a direct request
