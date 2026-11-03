@@ -33,6 +33,7 @@ VMess and SOCKS are not supported.
   - Base64 link lists and xray JSON configs as a fallback format
   - Fetched through the tunnel while the VPN is on, falling back to a direct request
   - New subscriptions immediately load profiles and metadata; adding the same URL updates its existing group
+  - If the main address does not respond, the subscription is loaded from the provider's backup address
   - Keep only working profiles from the group menu; the group is preserved if no server responds
 
 - **Bypass through VK calls**:
@@ -44,6 +45,7 @@ VMess and SOCKS are not supported.
   - Proxy / direct / block rule lists by domain, IP and geo categories
   - Optional "Russian IPs direct" bypass
   - Per-app proxy with a preset of VPN-aware apps, excluded networks
+  - Experimental "Through another profile" rules: send YouTube or chosen domains through other profiles within one VPN connection
   - Downloadable geo databases (signed manifest), import of Happ routing profiles
   - QUIC sniffing so domain rules apply to HTTP/3 traffic
 
@@ -71,7 +73,7 @@ VMess and SOCKS are not supported.
 
 - **Traffic statistics** in real time, with a configurable display mode
 
-- **Diagnostics**: manual network checks for allowlists, Telegram, Instagram, YouTube and DNS; optional connection checks, VPN comparison and a redacted report. Log viewer and xray-core update check.
+- **Diagnostics**: manual network checks for allowlists, Telegram, Instagram, YouTube and DNS; optional connection checks, VPN comparison and a redacted report. Log viewer.
 
 - **Security**: encrypted local profile database (SQLCipher), one-time credentials for local xray inbounds, secrets masked in logs
 
