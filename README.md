@@ -56,8 +56,10 @@ VMess and SOCKS are not supported.
 
 - **Censorship circumvention**: TLS fragmentation (global and per profile), mux for VLESS and Trojan
 
-- **Failover**:
-  - Automatic switch to a working profile when the current one fails its probe
+- **Connection recovery and failover**:
+  - Status line under the connection state: network (carrier or Wi-Fi), no network, connection lost
+  - If the server stops responding, the tunnel reconnects by itself without dropping the VPN
+  - Optional automatic switch to a working profile if reconnecting does not help
   - Manual switch from the status pill
 
 - **Profile Management**:
