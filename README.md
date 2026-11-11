@@ -1,10 +1,12 @@
 # Tenga Proxy Mobile (Veblock)
 
+> **Releases moved to [vebulogmetra/veblock](https://github.com/vebulogmetra/veblock/releases)** (tags `android-v…`). This repository is archived; 1.7.2 is its last release. The app switches to the new location by itself after updating to 1.7.2.
+
 An Android VPN client powered by [xray-core](https://github.com/XTLS/Xray-core) via [libXray](https://github.com/XTLS/libXray), plus censorship bypass through VK calls. Kotlin + Jetpack Compose.
 
 ## Download
 
-Download the latest APK from the [Releases](https://github.com/vebulogmetra/tenga-proxy-mobile/releases) section.
+Download `veblock-<version>-android.apk` from the latest `android-v…` release in [vebulogmetra/veblock](https://github.com/vebulogmetra/veblock/releases).
 
 ## Supported Protocols
 
